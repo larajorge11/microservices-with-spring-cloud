@@ -2,8 +2,3 @@ server:
   port: ${PORT:${SERVER_PORT:0}}
 
 words: a,the
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
