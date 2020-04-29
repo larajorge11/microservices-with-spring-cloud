@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.tutorial.spring.cloud</groupId>
-	<artifactId>springcloud</artifactId>
+	<artifactId>lab-4-article</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>lab-4-subject</name>
+	<name>lab-4-article</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
