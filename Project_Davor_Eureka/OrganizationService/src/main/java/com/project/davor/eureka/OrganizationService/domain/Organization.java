@@ -1,9 +1,6 @@
 package com.project.davor.eureka.OrganizationService.domain;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.List;
 
@@ -13,6 +10,7 @@ import java.util.List;
 @Builder
 public class Organization {
 
+    @Setter
     private Long id;
     private String name;
     private String address;
