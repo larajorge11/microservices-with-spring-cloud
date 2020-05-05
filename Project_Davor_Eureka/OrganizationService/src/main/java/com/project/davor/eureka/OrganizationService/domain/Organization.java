@@ -14,6 +14,8 @@ public class Organization {
     private Long id;
     private String name;
     private String address;
+    @Setter
     private List<Department> departments;
+    @Setter
     private List<Employee> employees;
 }
