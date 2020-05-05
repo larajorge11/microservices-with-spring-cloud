@@ -1,5 +1,7 @@
 package com.project.davor.eureka.OrganizationService;
 
+import com.project.davor.eureka.OrganizationService.domain.Organization;
+import com.project.davor.eureka.OrganizationService.repository.OrganizationRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -30,6 +32,15 @@ public class OrganizationServiceApplication {
 				.paths(PathSelectors.any())
 				.build()
 				.apiInfo(new ApiInfoBuilder().version("1.0").title("Organization API").description("Documentation Organization API v1.0").build());
+	}
+
+	@Bean
+	OrganizationRepository repository() {
+		OrganizationRepository repository = new OrganizationRepository();
+		repository.add(Organization.builder().name("Microsoft").address("Redmond, Washington, USA").build());
+		repository.add(Organization.builder().name("Oracle").address("Redwood City, California, USA").build());
+
+		return repository;
 	}
 
 }
